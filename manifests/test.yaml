@@ -19,6 +19,8 @@ spec:
       labels:
         app: httpserver
     spec:
+      imagePullSecrets:
+        - name: test
       containers:
         - name: httpserver
           image: ${IMAGE}
