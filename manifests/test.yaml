@@ -23,7 +23,7 @@ spec:
         - name: test
       containers:
         - name: httpserver
-          image: ${IMAGE}
+          image: ${USER_IMAGE_VPC}
           imagePullPolicy: IfNotPresent
           ports:
             - name: http
